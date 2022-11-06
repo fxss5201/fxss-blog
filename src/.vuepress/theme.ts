@@ -147,7 +147,7 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
+      vuePlayground: false,
     },
 
     // pwa: {
