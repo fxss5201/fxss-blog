@@ -35,5 +35,5 @@ export default defineUserConfig({
     }),
   ],
 
-  // shouldPrefetch: false,
+  shouldPrefetch: false,
 });
