@@ -1,5 +1,6 @@
 ---
 title: javascript Array方法总结
+isOriginal: true
 sticky: true
 category:
   - javascript

@@ -6,3 +6,31 @@
 .hero-image {
   border-radius: 50%;
 }
+
+.display__flex {
+  display: flex
+}
+
+.align-items__center {
+  align-items: center
+}
+
+.justify-content__center {
+  justify-content: center
+}
+
+.justify-content__space-between {
+  justify-content: space-between
+}
+
+.p__10 {
+  padding: 10px
+}
+
+.box-sizing__border-box {
+  box-sizing: border-box
+}
+
+.text-bold {
+  font-weight: 600
+}

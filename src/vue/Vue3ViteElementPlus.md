@@ -1,5 +1,6 @@
 ---
 title: Vue3/Vite/Element Plus初体验
+isOriginal: true
 category:
   - Vue3
   - Vite
