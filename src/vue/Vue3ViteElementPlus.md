@@ -1,14 +1,15 @@
 ---
 title: Vue3/Vite/Element Plus初体验
+shortTitle: Vue3/Vite/Element Plus
 isOriginal: true
 category:
   - Vue3
   - Vite
   - Element Plus
-date: 2022-06-16
+date: 2022-01-26
 ---
 
-最近看完 Vue3 和 Vite 文档之后，就写了个小 [demo](https://github.com/vueBlog/viteblog) ，整体感觉下来还是很丝滑的。 
+最近看完 Vue3 和 Vite 文档之后，就写了个小 [demo](https://github.com/vueBlog/viteblog) ，整体感觉下来还是很丝滑的。
 
 - [Vue3](https://v3.cn.vuejs.org/)
 - [Vite中文网](https://vitejs.cn/)
@@ -27,7 +28,6 @@ date: 2022-06-16
 ### ref 和 reactive
 
 `ref` 一般用于基础数据的响应式，`reactive` 一般用于引用数据的响应式，结合上面说到的同一块操作的变量放一起，总结如下：
-
 
 ```js
 const count = ref(0)

@@ -3,7 +3,7 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://blog.fxss.work/",
 
   navbarLayout: {
     left: ["Brand"],
@@ -45,18 +45,17 @@ export default hopeTheme({
     },
     timeline: "发表日志"
   },
+  // navbar
+  navbar: zhNavbar,
+  // sidebar
+  sidebar: zhSidebar,
+  sidebarSorter: ['date-desc'],
 
   locales: {
     /**
      * Chinese locale config
      */
     "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
       footer: "樊小书生：樊小书生的博客，多看代码，多看书，付出总会有收获的。",
 
       displayFooter: true,
