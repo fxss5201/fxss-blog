@@ -7,7 +7,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  base: "/fxss-blog/",
+  base: "/",
 
   lang: "zh-CN",
 
