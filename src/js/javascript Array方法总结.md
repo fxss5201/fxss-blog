@@ -4,6 +4,7 @@ isOriginal: true
 sticky: true
 category:
   - javascript
+tag:
   - Array
 date: 2020-03-12
 ---

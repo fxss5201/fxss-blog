@@ -4,6 +4,7 @@ shortTitle: call/apply/bind
 isOriginal: true
 category:
   - javascript
+tag:
   - call
   - apply
   - bind
