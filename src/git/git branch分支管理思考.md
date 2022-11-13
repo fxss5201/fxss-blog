@@ -3,8 +3,6 @@ title: git branch分支管理思考
 isOriginal: true
 category:
   - git
-tag:
-  - git branch
 date: 2021-09-07
 ---
 
