@@ -66,7 +66,7 @@ div[class*="test"] {
 
 |例子|例子描述|
 |-|-|
-|`a[src^="https"]`|选择其 src 属性值以 "https" 开头的每个 <a> 元素。|
+|`a[src^="https"]`|选择其 src 属性值以 "https" 开头的每个 `<a>` 元素。|
 
 `[attribute|=value]` 和 `[attribute^=value]` 的相同点和区别：
 
