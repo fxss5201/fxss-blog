@@ -28,7 +28,7 @@ date: 2020-02-09
 
 |例子|例子描述|
 |-|-|
-|`a[src*="abc"]`|选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。|
+|`a[src*="abc"]`|选择其 src 属性中包含 "abc" 子串的每个 `<a>` 元素。|
 
 `[attribute~=value]` 和 `[attribute*=value]` 的相同点和区别：
 
@@ -98,4 +98,4 @@ div[class^="test"] {
 
 |例子|例子描述|
 |-|-|
-|`a[src$=".pdf"]`|选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。|
+|`a[src$=".pdf"]`|选择其 src 属性以 ".pdf" 结尾的所有 `<a>` 元素。|
