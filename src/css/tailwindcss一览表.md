@@ -10,7 +10,7 @@ date: 2022-11-13
 
 ![Tailwind CSS IntelliSense](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f80fb055-eaa7-4008-b0c3-05194e370800/26671f33-7f69-40e8-af57-cc66a8d437cf.png)
 
-引入 **tailwindcss** 的目的是减少编写 css ，下面列出的是 tailwindcss 一览表：
+引入 [tailwindcss](https://www.tailwindcss.cn/docs) 的目的是减少编写 css ，下面列出的是 tailwindcss 一览表：
 
 ## [间距](https://www.tailwindcss.cn/docs/customizing-spacing#-2)
 
