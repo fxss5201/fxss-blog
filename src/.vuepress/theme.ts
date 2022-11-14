@@ -60,7 +60,7 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      copyright: `copyright © 2020-至今 <a target="_blank" href="https://github.com/fxss5201" class="author">樊小书生</a>`,
+      copyright: `copyright © 2020-至今 <a target="_blank" href="https://github.com/fxss5201" class="author">樊小书生</a><a style="margin-left: 4px;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" class="author">晋ICP备17012454号</a>`,
 
       blog: {
         description: "前端开发工程师",
