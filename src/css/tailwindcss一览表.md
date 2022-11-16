@@ -319,6 +319,22 @@ module.exports = {
       },
     },
   },
+   // 使用变体新增状态类
+  variants: {
+    extend: {
+      backgroundColor: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      backgroundOpacity: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      borderColor: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      borderOpacity: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      boxShadow: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      opacity: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      outline: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      textColor: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      textOpacity: ['active', 'disabled', 'visited', 'first', 'last', 'odd', 'even'],
+      margin: ['first', 'last', 'odd', 'even'],
+      padding: ['first', 'last', 'odd', 'even']
+    }
+  },
   plugins: [],
 };
 ```
