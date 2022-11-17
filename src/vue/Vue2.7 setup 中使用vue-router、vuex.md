@@ -176,3 +176,7 @@ export const useRoute = () => {
 经过测试，两者功能均正常，但是在组合式API中 vuex 的 `mapState`, `mapGetters`, `mapActions` 和 `mapMutations` 辅助函数是无法使用的。
 
 要在 vue devtools 查看页面中的内容信息，需要将 vue devtools 升级到 6.2.0 以上版本。
+
+参考：
+
+1. [前端vue2.6升级至vue2.7后如何使用旧版本vue-router与vuex，并且修改vuex](https://blog.csdn.net/qq_43586648/article/details/126348027)
