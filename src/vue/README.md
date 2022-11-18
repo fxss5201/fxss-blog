@@ -1,5 +1,7 @@
 ---
 title: Vue
+category:
+  - Vue
 date: 2022-11-13
 ---
 

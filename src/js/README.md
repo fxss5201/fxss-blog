@@ -1,5 +1,7 @@
 ---
-title: js
+title: javascript
+category:
+  - javascript
 date: 2022-11-13
 ---
 

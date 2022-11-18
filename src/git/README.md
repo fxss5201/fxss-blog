@@ -1,5 +1,7 @@
 ---
 title: git
+category:
+  - git
 date: 2022-11-13
 ---
 

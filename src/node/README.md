@@ -1,5 +1,7 @@
 ---
 title: node
+category:
+  - node
 date: 2022-11-13
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: 架构
+category:
+  - 架构
 date: 2022-11-13
 ---
 
