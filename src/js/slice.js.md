@@ -3,6 +3,7 @@ title: slice.js
 isOriginal: true
 category:
   - javascript
+tag:
   - lodash
 date: 2021-06-25
 ---

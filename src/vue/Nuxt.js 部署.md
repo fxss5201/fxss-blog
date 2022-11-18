@@ -3,6 +3,7 @@ title: Nuxt.js 部署
 isOriginal: true
 category:
   - Vue
+tag:
   - Nuxt
 date: 2020-06-26
 ---

@@ -3,6 +3,7 @@ title: nuxt.js + pm2 部署
 isOriginal: true
 category:
   - Vue
+tag:
   - Nuxt
 date: 2020-04-06
 ---

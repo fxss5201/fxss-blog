@@ -4,6 +4,7 @@ shortTitle: ant-design-vue select
 isOriginal: true
 category:
   - Vue
+tag:
   - ant-design-vue
 date: 2020-08-23
 ---

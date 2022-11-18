@@ -3,6 +3,7 @@ title: nuxt + vant 适配 rem
 isOriginal: true
 category:
   - Vue
+tag:
   - Nuxt
   - Vant
   - rem

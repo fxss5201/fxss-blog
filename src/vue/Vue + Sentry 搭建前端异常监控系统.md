@@ -4,6 +4,7 @@ shortTitle: Vue + Sentry
 isOriginal: true
 category:
   - Vue
+tag:
   - Sentry
 date: 2020-07-20
 ---
