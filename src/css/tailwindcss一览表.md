@@ -6,6 +6,7 @@ category:
 tag:
   - tailwindcss
 date: 2022-11-13
+image: https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f80fb055-eaa7-4008-b0c3-05194e370800/26671f33-7f69-40e8-af57-cc66a8d437cf.png
 ---
 
 ![Tailwind CSS IntelliSense](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f80fb055-eaa7-4008-b0c3-05194e370800/26671f33-7f69-40e8-af57-cc66a8d437cf.png)
