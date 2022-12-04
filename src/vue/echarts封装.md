@@ -35,7 +35,9 @@ date: 2022-12-04
 
 如下演示 echarts 封装使用：
 
-::: echarts 封装使用用例
+::: details echarts封装使用
+
+可以将如下代码拷贝到项目运行，更方便查看效果
 
 ```vue
 <template>
