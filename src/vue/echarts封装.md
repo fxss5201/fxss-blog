@@ -10,6 +10,8 @@ date: 2022-12-04
 
 做大屏的时候经常会遇到 echarts 展示，下面展示在 Vue2.7 / Vue3 中对 echarts （^5.4.0） 的简单封装。
 
+[样例查看](https://fxss5201.github.io/large-screen/#/echartsExample)
+
 ## echarts 封装使用
 
 ### props 说明
