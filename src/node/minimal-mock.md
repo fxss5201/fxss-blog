@@ -9,7 +9,7 @@ tag:
 date: 2023-03-04
 ---
 
-minimal-mock 极简 mock 服务，采用 [koa](https://github.com/koajs/koa) 搭建，支持全局配置及多种数据格式。
+[minimal-mock](https://github.com/fxss5201/minimal-mock) 极简 mock 服务，采用 [koa](https://github.com/koajs/koa) 搭建，支持全局配置及多种数据格式。
 
 > 什么是 Mock 数据：在前后端约定好 API 接口以后，前端可以使用 Mock 数据来在本地模拟出 API 应该要返回的数据，这样一来前后端开发就可以同时进行，不会因为后端 API 还在开发而导致前端的工作被阻塞。
 
@@ -134,7 +134,7 @@ module.exports = {
   "timeout": "1000", // 定义 mock 接口返回数据需要的时间，可以方便调节 loading 状态
 ```
 
-minimal-mock 也支持单独配置，配置方式是在 Mock 文件默认导出的对象 key 属性上定义：
+[minimal-mock](https://github.com/fxss5201/minimal-mock) 也支持单独配置，配置方式是在 Mock 文件默认导出的对象 key 属性上定义：
 
 ```js
 module.exports = {
@@ -177,7 +177,7 @@ module.exports = {
 };
 ```
 
-minimal-mock 底层使用的是 [koa](https://github.com/koajs/koa) ，更多 API 查看 [koa](https://github.com/koajs/koa) 。
+[minimal-mock](https://github.com/fxss5201/minimal-mock) 底层使用的是 [koa](https://github.com/koajs/koa) ，更多 API 查看 [koa](https://github.com/koajs/koa) 。
 
 ## 引入 Mock.js
 
@@ -215,3 +215,8 @@ module.exports = {
 ```
 
 如上是一个简单的分页展示信息。
+
+## 使用示例
+
+1. [react-antd](https://github.com/fxss5201/react-antd): [react](https://react.docschina.org/) + [antd](https://ant-design.antgroup.com/index-cn) 搭建的后台管理系统；
+2. [react-amis](https://github.com/fxss5201/react-amis): [react](https://react.docschina.org/) + [amis](https://aisuda.bce.baidu.com/amis/zh-CN/docs/index) 搭建的**低代码**后台管理系统。
