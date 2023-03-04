@@ -22,8 +22,7 @@ article: false
 
 1. [github](https://github.com/fxss5201)；
 2. [csdn](https://blog.csdn.net/fxss5201)；
-3. [稀土掘金](https://juejin.cn/user/3702810892856808)；
-4. [个人博客](https://www.fxss.work/blogNuxt/)。
+3. [稀土掘金](https://juejin.cn/user/3702810892856808)。
 
 ## 个人作品
 
