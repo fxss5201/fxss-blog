@@ -1,8 +1,9 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { getDirname, path } from "@vuepress/utils";
-import { searchPlugin } from "@vuepress/plugin-search";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
+// import { searchPlugin } from "@vuepress/plugin-search";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -38,14 +39,17 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
-    searchPlugin({
-      locales: {
-        '/': {
-          placeholder: '搜索',
-        },
-      },
-      hotKeys: ['s', '/', { key: 's', ctrl: true }]
-    }),
+    searchProPlugin({
+      indexContent: true
+    })
+    // searchPlugin({
+    //   locales: {
+    //     '/': {
+    //       placeholder: '搜索',
+    //     },
+    //   },
+    //   hotKeys: ['s', '/', { key: 's', ctrl: true }]
+    // }),
   ],
 
   shouldPrefetch: false,
