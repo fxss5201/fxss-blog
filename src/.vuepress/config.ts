@@ -40,7 +40,7 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
     searchProPlugin({
-      indexContent: true
+      // indexContent: true
     })
     // searchPlugin({
     //   locales: {
