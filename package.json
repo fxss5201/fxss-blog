@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-register-components": "2.0.0-beta.62",
+    "nodejs-jieba": "0.0.2",
     "swiper": "^8.4.4"
   }
 }
