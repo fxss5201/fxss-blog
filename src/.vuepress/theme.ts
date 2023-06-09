@@ -6,9 +6,9 @@ export default hopeTheme({
   hostname: "https://blog.fxss.work/",
 
   navbarLayout: {
-    left: ["Brand"],
+    start: ["Brand"],
     center: [],
-    right: ["Links", "Search", "Outlook", "Repo"],
+    end: ["Links", "Search", "Repo", "Outlook"],
   },
 
   author: {
@@ -75,9 +75,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true,
-    },
+    blog: true,
 
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
@@ -116,9 +114,9 @@ export default hopeTheme({
       echarts: true,
       flowchart: true,
       gfm: true,
-      imageLazyload: true,
-      imageTitle: true,
-      imageSize: true,
+      imgLazyload: true,
+      figure: true,
+      imgSize: true,
       include: true,
       katex: true,
       mark: true,

@@ -12,6 +12,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
+  title: "fxss 个人博客",
+  description: "fxss 个人博客",
 
   locales: {
     "/": {
