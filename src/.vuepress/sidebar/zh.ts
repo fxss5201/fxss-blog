@@ -8,6 +8,7 @@ export const zhSidebar = sidebar({
   "/node/": "structure",
   "/vue/": "structure",
   "/react/": "structure",
+  "/fan/": "structure",
   "/": [
     "",
     "intro",
