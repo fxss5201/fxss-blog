@@ -1,6 +1,6 @@
 ---
-title: Vue + Sentry 搭建前端异常监控系统
-shortTitle: Vue + Sentry
+title: Vue Sentry 搭建前端异常监控系统
+shortTitle: Vue Sentry
 isOriginal: true
 category:
   - Vue

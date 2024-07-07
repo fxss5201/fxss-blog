@@ -1,5 +1,6 @@
 ---
-title: map(parseInt) 详解
+title: map(parseInt)详解
+shortTitle: map(parseInt)详解
 isOriginal: true
 category:
   - javascript

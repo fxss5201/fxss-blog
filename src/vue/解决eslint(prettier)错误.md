@@ -1,6 +1,6 @@
 ---
 title: 解决VSCode Delete `␍`eslint(prettier)错误
-shortTitle: Delete `␍`
+shortTitle: eslint(prettier)错误
 date: 2021-06-20
 ---
 

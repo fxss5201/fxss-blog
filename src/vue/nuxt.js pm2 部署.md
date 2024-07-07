@@ -1,5 +1,5 @@
 ---
-title: nuxt.js + pm2 部署
+title: nuxt.js pm2 部署
 isOriginal: true
 category:
   - Vue

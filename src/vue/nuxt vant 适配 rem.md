@@ -1,5 +1,5 @@
 ---
-title: nuxt + vant 适配 rem
+title: nuxt vant 适配 rem
 isOriginal: true
 category:
   - Vue
