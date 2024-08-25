@@ -13,6 +13,11 @@ projects:
     desc: 可以广泛使用的积木框架，可以广泛适用的低代码平台。
     link: https://www.fxss.work/
 
+  - icon: project
+    name: fxss-leetcode
+    desc: fxss-leetcode 算法，包含 leetcode 和其他一些算法
+    link: https://fxss5201.github.io/fxss-leetcode/
+
   - icon: /csdn.svg
     name: CSDN 博客
     desc: CSDN 博客链接
