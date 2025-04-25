@@ -21,12 +21,13 @@ export default defineUserConfig({
   },
 
   head: [
+    ['link', { rel: 'icon', href: '/fxss-blog/logo.png' }],
     [
       'script', {},
       `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?6bb76405c797e3ab3f444480cf4ff8cd";
+        hm.src = "https://hm.baidu.com/hm.js?e8bcff1a50ea5af3b0d0d9824e74f894";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();`
