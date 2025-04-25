@@ -72,8 +72,7 @@ export default hopeTheme({
       },
     },
   },
-
-  
+  contributors: false,
 
   markdown: {
     align: true,
