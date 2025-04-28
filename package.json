@@ -8,21 +8,25 @@
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "npx vp-update"
+    "docs:update-package": "npx vp-update",
+    "tsToMd": "tsx scripts/tsToMd.ts"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.21",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.94",
+    "consola": "^3.4.2",
     "echarts": "^5.6.0",
     "flowchart.ts": "^3.0.1",
     "mermaid": "^11.6.0",
-    "sass-embedded": "^1.86.3",
+    "sass-embedded": "^1.87.0",
+    "tsx": "^4.19.3",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.21",
     "vuepress-theme-hope": "2.0.0-rc.82"
   },
   "dependencies": {
     "@vuepress/plugin-register-components": "2.0.0-rc.94",
+    "dayjs": "^1.11.13",
     "nodejs-jieba": "^0.3.0",
     "swiper": "^8.4.4"
   }

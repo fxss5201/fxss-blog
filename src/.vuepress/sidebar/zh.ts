@@ -12,6 +12,7 @@ export const zhSidebar = sidebar({
   "/react/": "structure",
   "/ts/": "structure",
   "/vue/": "structure",
+  "/type-challenges/": "structure",
   "/": [
     "",
     "intro",
