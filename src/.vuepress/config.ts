@@ -21,7 +21,7 @@ export default defineUserConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/fxss-blog/logo.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       'script', {},
       `var _hmt = _hmt || [];
