@@ -44,7 +44,7 @@ async function main () {
       const file = fileList[idx]
       const fileContent = await readFile(path.resolve(filePath, file), 'utf-8')
       const fileContentArr = fileContent.split('\n')
-      const title = fileContentArr[1].trimStart()
+      const title = fileContentArr[1].trimStart().replace('\r', '')
       const order = parseInt(title)
       const fileMdArr: string[] = []
       if (fileTitleList.findIndex(file => file.order === order) === -1) {
