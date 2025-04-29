@@ -55,11 +55,11 @@ async function main () {
         })
       }
 
-      try {
-        await access(path.resolve(filePath, file.replace('.ts', '.md')), constants.F_OK)
-        await unlink(path.resolve(filePath, file))
-        consola.success(`${file} 已经转换过`)
-      } catch (error) {
+      // try {
+      //   await access(path.resolve(filePath, file.replace('.ts', '.md')), constants.F_OK)
+      //   await unlink(path.resolve(filePath, file))
+      //   consola.success(`${file} 已经转换过`)
+      // } catch (error) {
         let fileYaml = `---
 title: ${title}
 order: ${order}
@@ -111,7 +111,7 @@ date: ${dayjs().format('YYYY-MM-DD')}
         await unlink(path.resolve(filePath, file))
         consola.success(`${file} 转换成功`)
       }
-    }
+    // }
 
     fileTitleList = fileTitleList.sort((a, b) => a.order - b.order)
     const mdTitleList = fileTitleList.map(file => `- [${file.title}](${file.filePath})`)
