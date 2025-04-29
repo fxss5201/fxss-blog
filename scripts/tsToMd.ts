@@ -26,7 +26,7 @@ async function main () {
         const titleEnd = line.indexOf('](')
         const title = line.slice(titleStart, titleEnd)
         const order = parseInt(title)
-        const filePath = line.slice(titleEnd + 2, line.length - 1)
+        const filePath = line.slice(titleEnd + 2, -1)
         fileTitleList.push({
           title,
           order,
@@ -34,8 +34,6 @@ async function main () {
         })
       }
     })
-
-
 
     let fileList = await readdir(filePath)
     fileList = fileList.filter(file => file.endsWith('.ts'))
