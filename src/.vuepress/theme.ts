@@ -48,7 +48,7 @@ export default hopeTheme({
   navbar: zhNavbar,
   // sidebar
   sidebar: zhSidebar,
-  sidebarSorter: ['date-desc'],
+  sidebarSorter: ['order', 'date-desc'],
 
   locales: {
     /**
