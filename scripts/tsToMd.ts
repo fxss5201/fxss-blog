@@ -26,7 +26,8 @@ async function main () {
         const titleEnd = line.indexOf('](')
         const title = line.slice(titleStart, titleEnd)
         const order = parseInt(title)
-        const filePath = line.slice(titleEnd + 2, -1)
+        const filePathStart = titleEnd + 2
+        const filePath = line.slice(filePathStart, line.indexOf('.md)', filePathStart) + 3)
         fileTitleList.push({
           title,
           order,
