@@ -73,3 +73,5 @@ date: 2025-04-28
 - [4179 - Flip](./04179-medium-flip.md)
 - [4182 - 斐波那契序列](./04182-medium-fei-bo-na-qi-xu-lie.md)
 - [4260 - AllCombinations](./04260-medium-allcombinations.md)
+- [4425 - Greater Than](./04425-medium-greater-than.md)
+- [4471 - Zip](./04471-medium-zip.md)
