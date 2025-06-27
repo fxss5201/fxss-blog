@@ -75,3 +75,8 @@ date: 2025-04-28
 - [4260 - AllCombinations](./04260-medium-allcombinations.md)
 - [4425 - Greater Than](./04425-medium-greater-than.md)
 - [4471 - Zip](./04471-medium-zip.md)
+- [4484 - IsTuple](./04484-medium-istuple.md)
+- [4499 - Chunk](./04499-medium-chunk.md)
+- [4518 - Fill](./04518-medium-fill.md)
+- [4803 - Trim Right](./04803-medium-trim-right.md)
+- [5140 - Trunc](./05140-medium-trunc.md)
