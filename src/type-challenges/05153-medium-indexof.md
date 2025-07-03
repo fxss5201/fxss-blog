@@ -13,7 +13,7 @@ by Pineapple (@Pineapple0919) #中等 #array
 
 ### 题目
 
-Implement the type version of Array.indexOf, indexOf<T, U> takes an Array T, any U and returns the index of the first U in Array T.
+Implement the type version of `Array.indexOf`, `indexOf<T, U>` takes an `Array T`, any `U` and returns the index of the first `U` in `Array T`.
 
 ```ts
 type Res = IndexOf<[1, 2, 3], 2>; // expected to be 1
