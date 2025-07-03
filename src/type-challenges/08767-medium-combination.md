@@ -1,21 +1,31 @@
-/*
-  8767 - Combination
-  -------
-  by Homyee King (@HomyeeKing) #中等 #array #application #string
+---
+title: 8767 - Combination
+order: 8767
+isOriginal: true
+category:
+  - type-challenges
+date: 2025-07-03
+---
 
-  ### 题目
+8767 - Combination
+-------
+by Homyee King (@HomyeeKing) #中等 #array #application #string
 
-  Given an array of strings, do Permutation & Combination.
-  It's also useful for the prop types like video [controlsList](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList)
+### 题目
 
-  ```ts
-  // expected to be `"foo" | "bar" | "baz" | "foo bar" | "foo bar baz" | "foo baz" | "foo baz bar" | "bar foo" | "bar foo baz" | "bar baz" | "bar baz foo" | "baz foo" | "baz foo bar" | "baz bar" | "baz bar foo"`
-  type Keys = Combination<['foo', 'bar', 'baz']>
-  ```
+Given an array of strings, do Permutation & Combination.
+It's also useful for the prop types like video [controlsList](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList)
 
-  > 在 Github 上查看：https://tsch.js.org/8767/zh-CN
-*/
+```ts
+// expected to be `"foo" | "bar" | "baz" | "foo bar" | "foo bar baz" | "foo baz" | "foo baz bar" | "bar foo" | "bar foo baz" | "bar baz" | "bar baz foo" | "baz foo" | "baz foo bar" | "baz bar" | "baz bar foo"`
+type Keys = Combination<['foo', 'bar', 'baz']>
+```
 
+> 在 Github 上查看：https://tsch.js.org/8767/zh-CN
+
+### 代码
+
+```ts
 /* _____________ 你的代码 _____________ */
 
 type Combination<T extends string[], A = T[number], U = A> =
@@ -25,6 +35,11 @@ type Combination<T extends string[], A = T[number], U = A> =
 
 type A = Combination<['foo', 'bar', 'baz']>
 
+```
+
+### 测试用例
+
+```ts
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
@@ -48,9 +63,10 @@ type cases = [
   'one two' | 'two one'>>,
 ]
 
-/* _____________ 下一步 _____________ */
-/*
-  > 分享你的解答：https://tsch.js.org/8767/answer/zh-CN
-  > 查看解答：https://tsch.js.org/8767/solutions
-  > 更多题目：https://tsch.js.org/zh-CN
-*/
+```
+
+### 相关链接
+
+> 分享你的解答：https://tsch.js.org/8767/answer/zh-CN
+> 查看解答：https://tsch.js.org/8767/solutions
+> 更多题目：https://tsch.js.org/zh-CN

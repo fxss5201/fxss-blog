@@ -1,19 +1,29 @@
-/*
-  8640 - Number Range
-  -------
-  by AaronGuo (@HongxuanG) #中等
+---
+title: 8640 - Number Range
+order: 8640
+isOriginal: true
+category:
+  - type-challenges
+date: 2025-07-03
+---
 
-  ### 题目
+8640 - Number Range
+-------
+by AaronGuo (@HongxuanG) #中等
 
-  Sometimes we want to limit the range of numbers...
-  For examples.
-  ```ts
-  type result = NumberRange<2 , 9> //  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
-  ```
+### 题目
 
-  > 在 Github 上查看：https://tsch.js.org/8640/zh-CN
-*/
+Sometimes we want to limit the range of numbers...
+For examples.
+```ts
+type result = NumberRange<2 , 9> //  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+```
 
+> 在 Github 上查看：https://tsch.js.org/8640/zh-CN
+
+### 代码
+
+```ts
 /* _____________ 你的代码 _____________ */
 
 type NumberRange<L, H, Count extends any[] = [], Res extends number[] = [], Flag extends boolean = Count['length'] extends L ? true : false> =
@@ -23,6 +33,11 @@ type NumberRange<L, H, Count extends any[] = [], Res extends number[] = [], Flag
       : NumberRange<L, H, [...Count, ''], [...Res, Count['length']], Flag>
     : NumberRange<L, H, [...Count, '']>
 
+```
+
+### 测试用例
+
+```ts
 /* _____________ 测试用例 _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
@@ -49,9 +64,10 @@ type cases = [
   Expect<Equal<NumberRange<0, 140>, Result3>>,
 ]
 
-/* _____________ 下一步 _____________ */
-/*
-  > 分享你的解答：https://tsch.js.org/8640/answer/zh-CN
-  > 查看解答：https://tsch.js.org/8640/solutions
-  > 更多题目：https://tsch.js.org/zh-CN
-*/
+```
+
+### 相关链接
+
+> 分享你的解答：https://tsch.js.org/8640/answer/zh-CN
+> 查看解答：https://tsch.js.org/8640/solutions
+> 更多题目：https://tsch.js.org/zh-CN
