@@ -86,3 +86,6 @@ date: 2025-04-28
 - [7544 - Construct Tuple](./07544-medium-construct-tuple.md)
 - [8640 - Number Range](./08640-medium-number-range.md)
 - [8767 - Combination](./08767-medium-combination.md)
+- [8987 - Subsequence](./08987-medium-subsequence.md)
+- [9142 - CheckRepeatedChars](./09142-medium-checkrepeatedchars.md)
+- [9286 - FirstUniqueCharIndex](./09286-medium-firstuniquecharindex.md)
