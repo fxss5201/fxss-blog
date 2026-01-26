@@ -63,7 +63,20 @@ type ComplexObject = {
 
 const fn = (v: boolean) => v ? 1 : 2
 const fn1 = (v: boolean, w: any) => v ? 1 : 2
+```
 
+### 相关知识点
+
+`infer` 是 TypeScript 在条件类型中提供的关键字，用于声明一个 **待推导的类型变量**（类似给类型起一个临时名字），只能在 `extends` 子句中使用。它的核心作用是：从已有类型中提取 / 推导我们需要的部分，而无需手动硬编码类型。
+
+`infer` 必须配合条件类型使用，语法结构如下：
+
+```ts
+// 基础结构：推导 T 的类型为 U，若能推导则返回 U，否则返回 never
+type InferType<T> = T extends infer U ? U : never;
+
+type Example = InferType<string>; // Example 类型为 string
+type Example2 = InferType<number[]>; // Example2 类型为 number[]
 ```
 
 ### 相关链接
