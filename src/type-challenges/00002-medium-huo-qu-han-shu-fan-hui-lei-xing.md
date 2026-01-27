@@ -39,31 +39,12 @@ type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never
 
 ```
 
-## 测试用例
+关键解释：
 
-```ts
-/* _____________ 测试用例 _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
-
-type cases = [
-  Expect<Equal<string, MyReturnType<() => string>>>,
-  Expect<Equal<123, MyReturnType<() => 123>>>,
-  Expect<Equal<ComplexObject, MyReturnType<() => ComplexObject>>>,
-  Expect<Equal<Promise<boolean>, MyReturnType<() => Promise<boolean>>>>,
-  Expect<Equal<() => 'foo', MyReturnType<() => () => 'foo'>>>,
-  Expect<Equal<1 | 2, MyReturnType<typeof fn>>>,
-  Expect<Equal<1 | 2, MyReturnType<typeof fn1>>>,
-]
-
-type ComplexObject = {
-  a: [12, 'foo']
-  bar: 'hello'
-  prev(): number
-}
-
-const fn = (v: boolean) => v ? 1 : 2
-const fn1 = (v: boolean, w: any) => v ? 1 : 2
-```
+- `T`：泛型参数，代表任意函数类型；
+- `(...args: any[]) => infer R`：函数类型的模式匹配，用于提取函数的返回类型 `R`；
+- `infer R`：类型推断，用于在条件类型中提取符合条件的类型；
+- `never`：表示永远不会出现的类型，用于处理不满足条件的情况。
 
 ## 相关知识点
 
@@ -327,6 +308,32 @@ type FnParams = GetFunctionParams<typeof fn>; // FnParams 类型为 [string, num
 
 // 进一步：提取第一个参数的类型
 type FirstParam = GetFunctionParams<typeof fn>[0]; // FirstParam 类型为 string
+```
+
+## 测试用例
+
+```ts
+/* _____________ 测试用例 _____________ */
+import type { Equal, Expect } from '@type-challenges/utils'
+
+type cases = [
+  Expect<Equal<string, MyReturnType<() => string>>>,
+  Expect<Equal<123, MyReturnType<() => 123>>>,
+  Expect<Equal<ComplexObject, MyReturnType<() => ComplexObject>>>,
+  Expect<Equal<Promise<boolean>, MyReturnType<() => Promise<boolean>>>>,
+  Expect<Equal<() => 'foo', MyReturnType<() => () => 'foo'>>>,
+  Expect<Equal<1 | 2, MyReturnType<typeof fn>>>,
+  Expect<Equal<1 | 2, MyReturnType<typeof fn1>>>,
+]
+
+type ComplexObject = {
+  a: [12, 'foo']
+  bar: 'hello'
+  prev(): number
+}
+
+const fn = (v: boolean) => v ? 1 : 2
+const fn1 = (v: boolean, w: any) => v ? 1 : 2
 ```
 
 ## 相关链接
