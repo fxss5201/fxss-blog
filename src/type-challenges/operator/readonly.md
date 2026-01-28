@@ -1,3 +1,11 @@
+---
+title: ts readonly 操作符
+isOriginal: true
+category:
+  - TypeScript
+date: 2026-01-28
+---
+
 ### `readonly`
 
 - 核心作用：标记后，目标（属性 / 数组 / 元组）只能在初始化阶段赋值（比如接口实例化、类构造函数、变量声明时），后续任何修改操作都会被 TS 编译器拦截报错；

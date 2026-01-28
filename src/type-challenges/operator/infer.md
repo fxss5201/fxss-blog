@@ -1,3 +1,11 @@
+---
+title: ts infer 操作符
+isOriginal: true
+category:
+  - TypeScript
+date: 2026-01-28
+---
+
 ### `infer`
 
 `infer` 是 TypeScript 在条件类型中提供的关键字，用于声明一个 **待推导的类型变量**（类似给类型起一个临时名字），只能在 `extends` 子句中使用。它的核心作用是：从已有类型中提取 / 推导我们需要的部分，而无需手动硬编码类型。

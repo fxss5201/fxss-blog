@@ -1,3 +1,11 @@
+---
+title: ts as 操作符
+isOriginal: true
+category:
+  - TypeScript
+date: 2026-01-28
+---
+
 ### `as`
 
 `as` 是 TS 里的类型断言，手动告诉编译器某个值的具体类型。

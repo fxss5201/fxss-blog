@@ -1,3 +1,11 @@
+---
+title: ts extends 操作符
+isOriginal: true
+category:
+  - TypeScript
+date: 2026-01-28
+---
+
 ### `extends`
 
 | 使用维度 | 核心作用 | 示例场景 |
