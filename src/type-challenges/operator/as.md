@@ -1,5 +1,5 @@
 ---
-title: ts as 操作符
+title: ts as 运算符
 isOriginal: true
 category:
   - TypeScript

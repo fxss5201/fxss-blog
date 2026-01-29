@@ -1,5 +1,5 @@
 ---
-title: ts infer 操作符
+title: ts infer 运算符
 isOriginal: true
 category:
   - TypeScript
