@@ -11,7 +11,7 @@ date: 2025-04-29
 -------
 by Anthony Fu (@antfu) #中等 #application
 
-### 题目
+## 题目
 
 在 JavaScript 中我们经常会使用可串联（Chainable/Pipeline）的函数构造一个对象，但在 TypeScript 中，你能合理的给它赋上类型吗？
 
@@ -44,7 +44,7 @@ interface Result {
 
 > 在 Github 上查看：https://tsch.js.org/12/zh-CN
 
-### 代码
+## 代码
 
 ```ts
 /* _____________ 你的代码 _____________ */
@@ -52,6 +52,7 @@ interface Result {
 /**
  * 定义可串联构造器的类型
  * @template T 当前构造器对象的状态，默认为空对象
+ */
 type Chainable<T = {}> = {
   /**
    * 用于扩展或修改当前对象的方法
@@ -60,16 +61,30 @@ type Chainable<T = {}> = {
    * @param key 要添加或修改的键，根据情况可能为 never 或 K
    * @param value 要添加或修改的值
    * @returns 一个新的 Chainable 实例，包含更新后的对象状态
+   */
   option: <K extends string, V>(key: K extends keyof T ? V extends T[K] ? never : K : K, value: V) => Chainable<Omit<T, K> & Record<K, V>>
   /**
    * 获取当前构造器对象的最终状态
    * @returns 当前对象的状态
+   */
   get(): T
 }
 
 ```
 
-### 测试用例
+关键解释：
+
+- `Chainable<T>`：泛型参数，代表当前构造器对象的状态，默认为空对象；
+- `option(key, value)`：方法，用于扩展或修改当前对象的状态；
+  - `K extends string`：约束 `K` 必须是字符串类型；
+  - `V`：要添加或修改的值的类型；
+  - `key: K extends keyof T ? V extends T[K] ? never : K : K`：约束 `key` 必须是 `T` 中不存在的属性名，或者 `value` 类型与 `T[K]` 不同的属性名；
+  - `value: V`：要添加或修改的值；
+  - `Chainable<Omit<T, K> & Record<K, V>>`：返回一个新的 `Chainable` 实例，包含更新后的对象状态；
+- `get()`：方法，用于获取当前构造器对象的最终状态；
+  - `T`：当前构造器对象的状态。
+
+## 测试用例
 
 ```ts
 /* _____________ 测试用例 _____________ */
@@ -118,7 +133,7 @@ type Expected3 = {
 
 ```
 
-### 相关链接
+## 相关链接
 
 > 分享你的解答：https://tsch.js.org/12/answer/zh-CN
 > 查看解答：https://tsch.js.org/12/solutions
