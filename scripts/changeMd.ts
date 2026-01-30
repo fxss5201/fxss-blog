@@ -53,7 +53,6 @@ async function main () {
 }
 
 const config: Record<string, string> = {
-  gzh: ``,
   csdn: `
 下面是我的公众号，欢迎关注。关注后有新的功能点会及时收到推送。
 
@@ -67,6 +66,8 @@ const config: Record<string, string> = {
 
 ![前端功能点](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/4bdeec99a0154e7aa73c1c6765f3dcf0~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZnhzcw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzcwMjgxMDg5Mjg1NjgwOCJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1770360215&x-orig-sign=PMCJuaaBkgWE%2FHKqZLV2DElA4AY%3D)
 `
+  ,
+  gzh: ``, // gzh 配置放最后一个
 }
 
 main()
