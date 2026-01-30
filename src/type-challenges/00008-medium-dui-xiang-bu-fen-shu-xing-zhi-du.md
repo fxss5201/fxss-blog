@@ -397,7 +397,7 @@ type TodoPreview = {
 // }
 ```
 
-### `Omit<T, K>`
+### `Omit`
 
 `Omit<T, K>` 用于从类型 `T` 中排除 `K` 中的属性，返回一个新类型。
 

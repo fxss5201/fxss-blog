@@ -10,7 +10,8 @@
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "npx vp-update",
     "tsToMd": "tsx scripts/tsToMd.ts",
-    "changeMd": "tsx scripts/changeMd.ts"
+    "changeMd": "tsx scripts/changeMd.ts",
+    "addInfoMd": "tsx scripts/addInfoMd.ts"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.21",
