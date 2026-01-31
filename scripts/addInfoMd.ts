@@ -54,5 +54,7 @@ config.set('&', 'And.md')
 config.set('|', 'Or.md')
 config.set('T[number]', 'TNumber.md')
 config.set('Record', 'Record.md')
+config.set('unknown', 'unknown.md')
+config.set('never', 'never.md')
 
 main()
