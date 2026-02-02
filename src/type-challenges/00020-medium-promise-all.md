@@ -11,7 +11,7 @@ date: 2025-04-29
 -------
 by Anthony Fu (@antfu) #中等 #array #promise
 
-### 题目
+## 题目
 
 给函数`PromiseAll`指定类型，它接受元素为 Promise 或者类似 Promise 的对象的数组，返回值应为`Promise<T>`，其中`T`是这些 Promise 的结果组成的数组。
 
@@ -28,7 +28,7 @@ const p = PromiseAll([promise1, promise2, promise3] as const)
 
 > 在 Github 上查看：https://tsch.js.org/20/zh-CN
 
-### 代码
+## 代码
 
 ```ts
 /* _____________ 你的代码 _____________ */
@@ -37,7 +37,19 @@ declare function PromiseAll<T extends any[]>(values: [...T]): Promise<{ [K in ke
 
 ```
 
-### 测试用例
+关键解释：
+- `T extends any[]`：约束 `T` 必须是数组类型。
+- `[...T]`：是数组扩展语法（元组展开），用于保留输入数组的元组结构。
+- `Awaited<T[K]>`：获取 `Promise` 或者类似 `Promise` 的对象的结果类型。
+- `Promise<...>`：函数返回一个 `Promise`。
+- `{ [K in keyof T]: Awaited<T[K]> }`：将结果类型组成数组。
+   - `{ [K in keyof T]: ... }`：这是一个映射类型，遍历元组 `T` 的所有索引 `K`（如 0、1、2...），并为每个索引生成对应的类型。
+   - `Awaited<T[K]>`：获取 `Promise` 或者类似 `Promise` 的对象的结果类型。
+      - 若 `T[K]` 是 `Promise<X>`，则 `Awaited<T[K]>` 为 `X`;
+      - 若 `T[K]` 是普通值 `X`，则 `Awaited<T[K]>` 仍为 `X`;
+      - `Awaited` 支持嵌套 Promise，如 `Awaited<Promise<Promise<X>>>` 也会解析为 `X`。
+
+## 测试用例
 
 ```ts
 /* _____________ 测试用例 _____________ */
@@ -59,7 +71,7 @@ type cases = [
 
 ```
 
-### 相关链接
+## 相关链接
 
 > 分享你的解答：https://tsch.js.org/20/answer/zh-CN
 > 查看解答：https://tsch.js.org/20/solutions

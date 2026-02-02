@@ -11,7 +11,7 @@ date: 2025-04-28
 -------
 by sinoon (@sinoon) #简单 #tuple
 
-### 题目
+## 题目
 
 创建一个`Length`泛型，这个泛型接受一个只读的元组，返回这个元组的长度。
 
@@ -27,7 +27,7 @@ type spaceXLength = Length<spaceX> // expected 5
 
 > 在 Github 上查看：https://tsch.js.org/18/zh-CN
 
-### 代码
+## 代码
 
 ```ts
 /* _____________ 你的代码 _____________ */
@@ -36,7 +36,7 @@ type Length<T extends readonly PropertyKey[]> = T['length']
 
 ```
 
-### 测试用例
+## 测试用例
 
 ```ts
 /* _____________ 测试用例 _____________ */
@@ -56,7 +56,7 @@ type cases = [
 
 ```
 
-### 相关链接
+## 相关链接
 
 > 分享你的解答：https://tsch.js.org/18/answer/zh-CN
 > 查看解答：https://tsch.js.org/18/solutions
