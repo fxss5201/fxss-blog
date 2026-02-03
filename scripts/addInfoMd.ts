@@ -57,5 +57,6 @@ config.set('Record', 'Record.md')
 config.set('unknown', 'unknown.md')
 config.set('never', 'never.md')
 config.set('...infer', 'MatchInfer.md')
+config.set('Awaited', 'Awaited.md')
 
 main()
