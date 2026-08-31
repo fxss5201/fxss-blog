@@ -11,7 +11,7 @@ date: 2025-04-28
 -------
 by Anthony Fu (@antfu) #简单 #union #built-in
 
-### 题目
+## 题目
 
 不使用 `Pick<T, K>` ，实现 TS 内置的 `Pick<T, K>` 的功能。
 
@@ -36,7 +36,7 @@ const todo: TodoPreview = {
 
 > 在 Github 上查看：https://tsch.js.org/4/zh-CN
 
-### 代码
+## 代码
 
 ```ts
 /* _____________ 你的代码 _____________ */
@@ -47,7 +47,63 @@ type MyPick<T, K extends keyof T> = {
 
 ```
 
-### 测试用例
+关键解释：
+
+- `T`：泛型参数，代表任意对象类型；
+- `K extends keyof T`：约束 `K` 必须是 `T` 的属性名之一；
+- `[P in K]: T[P]`：映射类型，遍历 `K` 中的每个属性名 `P`，并将 `T[P]` 作为 `P` 的类型。
+  - `P in K`：遍历 `K` 中的每个属性名 `P`；
+  - `T[P]`：获取 `T` 中属性 `P` 的类型。
+
+## 相关知识点
+
+### `keyof`
+
+`keyof` 操作符用于获取对象类型的所有属性名（包括索引签名），并将其转换为联合类型。
+
+例如：
+
+```ts
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+
+type TodoKeys = keyof Todo // "title" | "description" | "completed"
+```
+
+### `extends`
+
+`extends` 操作符用于约束泛型参数的类型范围。
+
+### `in`
+
+`in` 操作符用于遍历联合类型中的每个成员。
+
+例如：
+
+```ts
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+
+type TodoKeys = 'title' | 'description' | 'completed'
+
+type TodoPreview = {
+  [P in TodoKeys]: Todo[P]
+}
+// TodoPreview 类型为：
+// {
+//   title: string
+//   description: string
+//   completed: boolean
+// }
+```
+
+## 测试用例
 
 ```ts
 /* _____________ 测试用例 _____________ */
@@ -77,7 +133,7 @@ interface Expected2 {
 
 ```
 
-### 相关链接
+## 相关链接
 
 > 分享你的解答：https://tsch.js.org/4/answer/zh-CN
 > 查看解答：https://tsch.js.org/4/solutions

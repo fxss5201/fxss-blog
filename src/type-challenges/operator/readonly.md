@@ -1,65 +1,14 @@
 ---
-title: 7 - 对象属性只读
-order: 7
+title: ts readonly 运算符
 isOriginal: true
 category:
-  - type-challenges
-date: 2025-04-28
+  - TypeScript
+date: 2026-01-28
 ---
-
-7 - 对象属性只读
--------
-by Anthony Fu (@antfu) #简单 #built-in #readonly #object-keys
-
-## 题目
-
-不要使用内置的`Readonly<T>`，自己实现一个。
-
-泛型 `Readonly<T>` 会接收一个 _泛型参数_，并返回一个完全一样的类型，只是所有属性都会是只读 (readonly) 的。
-
-也就是不可以再对该对象的属性赋值。
-
-例如：
-
-```ts
-interface Todo {
-  title: string
-  description: string
-}
-
-const todo: MyReadonly<Todo> = {
-  title: "Hey",
-  description: "foobar"
-}
-
-todo.title = "Hello" // Error: cannot reassign a readonly property
-todo.description = "barFoo" // Error: cannot reassign a readonly property
-```
-
-> 在 Github 上查看：https://tsch.js.org/7/zh-CN
-
-## 代码
-
-```ts
-/* _____________ 你的代码 _____________ */
-
-type MyReadonly<T> = {
-  readonly [P in keyof T]: T[P]
-}
-
-```
-
-关键解释：
-
-- `readonly` 关键字用于将属性设置为只读，即不能对其进行赋值操作；
-- `[P in keyof T]` 用于遍历泛型 `T` 的所有属性键；
-- `T[P]` 用于获取属性 `P` 的类型。
-
-## 相关知识点
 
 ### `readonly`
 
-- 核心作用：标记后，目标（属性 / 数组 / 元组）只能在初始化阶段赋值（比如接口实例化、类构造函数、变量声明时），后续任何修改操作都会被 TS 编译器拦截报错；
+- 核心作用：标记后，目标（属性 / 数组 / 元组）只能在初始化阶段赋值（比如接口实例化、类构造函数、变量声明时），后续任何修改运算都会被 TS 编译器拦截报错；
 - 运行时特性：`readonly` 仅做编译时检查，不会生成任何额外 JS 代码，也无法真正阻止运行时的修改（比如通过类型断言绕开的话，运行时仍能改）；
 - 与 `const` 的区别：`const` 是变量层面的不可重新赋值（但变量指向的对象 / 数组内部属性仍可改），`readonly` 是属性 / 类型层面的不可修改（变量本身可重新赋值，除非变量也用 `const`）。
 
@@ -158,72 +107,3 @@ const dict: ReadonlyDict = { a: 1, b: 2 };
 dict["a"] = 3; // ❌ 报错：索引签名是只读的
 console.log(dict["b"]); // ✅ 合法：仅读取
 ```
-
-### `keyof`
-
-`keyof` 操作符用于获取对象类型的所有属性名（包括索引签名），并将其转换为联合类型。
-
-例如：
-
-```ts
-interface Todo {
-  title: string
-  description: string
-  completed: boolean
-}
-
-type TodoKeys = keyof Todo // "title" | "description" | "completed"
-```
-
-### `in`
-
-`in` 操作符用于遍历联合类型中的每个成员。
-
-例如：
-
-```ts
-interface Todo {
-  title: string
-  description: string
-  completed: boolean
-}
-
-type TodoKeys = 'title' | 'description' | 'completed'
-
-type TodoPreview = {
-  [P in TodoKeys]: Todo[P]
-}
-// TodoPreview 类型为：
-// {
-//   title: string
-//   description: string
-//   completed: boolean
-// }
-```
-
-## 测试用例
-
-```ts
-/* _____________ 测试用例 _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
-
-type cases = [
-  Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,
-]
-
-interface Todo1 {
-  title: string
-  description: string
-  completed: boolean
-  meta: {
-    author: string
-  }
-}
-
-```
-
-## 相关链接
-
-> 分享你的解答：https://tsch.js.org/7/answer/zh-CN
-> 查看解答：https://tsch.js.org/7/solutions
-> 更多题目：https://tsch.js.org/zh-CN

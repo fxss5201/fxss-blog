@@ -130,7 +130,7 @@ date: 2025-04-28
     consola.success('README.md 转换成功')
 
   } catch (error) {
-    consola.error('type-challenges 目录不存在')
+    console.log(error)
   }
 }
 
